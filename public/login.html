@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Page</title>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+
+
+<body>
+  <div id="banner-wrapper">
+    <div class="login-container">
+      <img id="lock" src="../images/if_lock_285646.png">
+      <form>
+        <div class="form-input">
+          <input type="text" id="username" placeholder="UserName">
+        </div>
+        <div class="form-input">
+          <input type="password" id="password" placeholder="Password">
+        </div>
+        <input type="button" name="submit" value="LOGIN" class="btn-login" onclick="">
+      </form>
+      <a href="#">Forgot Password?</a>
+    </div>
+  </div>
+
+  <script>
+    particlesJS.load('banner-wrapper', 'json/particles.json', function() {
+      console.log('Particles.json loaded,.,,');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.css">
+  <!--link href="style.css" rel="stylesheet" type="text/css" media="all" /-->
+  <title>My Contacts</title>
+</head>
+<body>
+  <!--script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <div id="banner-wrapper"></div-->
+  <div class="container">
+    <h1 class="center-align">
+      My Contacts
+    </h1>
+    <input type="text" id="filterInput" placeholder="Search Name...">
+    <ul id="name" class="collection with-header">
+      <li class="collection-header">
+        <h5>A</h5>
+      </li>
+      <li class="collection-item">
+        <a href="#">Abraham</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Akram</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Arul</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Arjun</a>
+      </li>
+      <li class="collection-header">
+        <h5>B</h5>
+      </li>
+      <li class="collection-item">
+        <a href="#">Barrack</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Binoy</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Badri</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Barkha</a>
+      </li>
+      <li class="collection-header">
+        <h5>C</h5>
+      </li>
+      <li class="collection-item">
+        <a href="#">Chandra</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Chunni</a>
+      </li>
+      <li class="collection-item">
+        <a href="#">Charles</a>
+      </li>
+
+    </ul>
+
+  </div>
+  <script>
+  	//particlesJS.load('banner-wrapper', 'particles.json', function(){
+  	//console.log('Particles.json loaded,.,,');});
+
+    // Get input element
+    let filterInput = document.getElementById('filterInput');
+
+    // Add event Listener
+    filterInput.addEventListener('keyup', filterNames);
+
+    function filterNames(){
+      //Get value of input
+      let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+      //Get names UL
+      let ul = document.getElementById('name');
+
+      //Get lis from UL
+      let li = ul.querySelectorAll('li.collection-item');
+
+      // Loop through collection-item li
+      for(let i=0; i < li.length; i++){
+        let a = li[i].getElementsByTagName('a')[0];
+
+        //if matched
+        if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+          li[i].style.display = '';
+        }else {
+          li[i].style.display = 'none';
+        }
+      }
+
+    }
+
+  </script>
+</body>
+</html>

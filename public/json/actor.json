@@ -1,0 +1,13 @@
+{ "users": [
+  {
+    "userId":1,
+    "userName":"PankajKumarYadav",
+    "firstName":"Pankaj",
+    "secondName":"kumar",
+    "lastName":"Yadav",
+    "admin":true,
+    "manager":true,
+    "active":true
+  }
+]
+}
