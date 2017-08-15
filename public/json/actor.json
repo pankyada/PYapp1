@@ -7,7 +7,8 @@
     "lastName":"Yadav",
     "admin":true,
     "manager":true,
-    "active":true
+    "active":true,
+    "password":"mesmerism"
   }
 ]
 }
