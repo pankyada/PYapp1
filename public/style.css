@@ -42,20 +42,22 @@
 
 	.container {
 	  overflow: hidden;
-	  float: top;
-	  position: absolute;
+	  float:none ;
+	  position: fixed;
 	  margin: 0em auto;
 	  width: 1200px;
 	}
 
 	.login-container {
-	  margin: 250px 720px 250px 720px;
+	  /*margin: 250px 720px 250px 720px;*/
+		position:absolute;
+		left:37%;
+		top:25%;
 	  width: 400px;
 	  height: 350px;
 	  text-align: center;
 	  background-color: rgba(52, 73, 94, 0.7);
 	  border-radius: 15px;
-	  Position: absolute;
 	}
 
 	.login-container img {
